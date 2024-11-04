@@ -19,7 +19,6 @@ class phpvbAuthLDAP implements phpvbAuth {
 	);
 	
 	public function __construct($userConfig = null) {
-        	error_log("phpvbAuthLDAP constructor called with userConfig: " . print_r($userConfig, true));
         	if ($userConfig) {
             		$this->config = array_merge($this->config, $userConfig);
         	}
